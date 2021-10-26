@@ -1,0 +1,36 @@
+body {
+  font-family: Raleway;
+}
+.main__container {
+  padding: 25px;
+}
+.form__accounts {
+  margin-bottom: 50px;
+}
+.input__text {
+  margin-right: 25px;
+}
+.users__list {
+  padding: 0;
+  margin: 0 50px;
+  font-family: Roboto;
+  font-size: 400;
+}
+.count {
+  display: none;
+}
+.show {
+  display: block;
+}
+.count__list--item {
+  list-style: none;
+}
+.users {
+  display: flex;
+}
+.users__list--category {
+  display: block;
+}
+.count__list--item {
+  margin-bottom: 10px;
+}

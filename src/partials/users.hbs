@@ -1,0 +1,13 @@
+{{#each this}}
+        <li class="users__list--item">
+            <span class="users__list--category">{{name}}</span>
+            <span class="users__list--category">Валюта: {{currency}}</span>
+            <span class="users__list--category">От: {{regDate}}</span>
+            <span class="users__list--category">До: {{finalDate}}</span>
+            <span class="users__list--category">Дебитовый счет: {{account.debitAccount}} {{currency}}</span>
+            <span class="users__list--category">Кредитовый счет: {{account.creditAccount.personalFound}} {{currency}}</span>
+            <span class="users__list--category">Кредитные средства: {{account.creditAccount.creditFounds.founds}} {{currency}}</span>
+            <span class="users__list--category">Кредитный лимит: {{account.creditAccount.creditFounds.limit}} {{currency}}</span>
+        </li>
+        <br>
+{{/each}}
