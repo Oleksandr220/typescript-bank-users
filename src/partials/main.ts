@@ -23,9 +23,9 @@ const parseLocalUsers:any[] = JSON.parse(localUsers);
 function choiceAccounts(event:any) {
   event.preventDefault();
   const curAccounts = formAccounts.bankUsers.value;
-  const arrayAccounts:any[] = [];
+  const arrayAccounts:{}[] = [];
 
-  parseLocalUsers.map((user:any) => {
+  parseLocalUsers.map((user) => {
     if (curAccounts == "activeAccount") {
       if (user.isActive === true) {
         arrayAccounts.push(user);
@@ -43,7 +43,7 @@ function choiceAccounts(event:any) {
   render(arrayAccounts, curAccounts);
 }
 // Рендер
-function render(users:any[], curAccounts:any) {
+function render(users: {}[], curAccounts:string) {
   if (localUsers === null) {
     return addUsersToMarkup(parseLocalUsers);
   }
@@ -52,7 +52,7 @@ function render(users:any[], curAccounts:any) {
 }
 
 // Добавление юзеров в localStorage
-function setUsersToLS(clients:any) {
+function setUsersToLS(clients:{}[]) {
   if (parseLocalUsers !== undefined) {
     console.log(parseLocalUsers);
     return;
@@ -61,7 +61,7 @@ function setUsersToLS(clients:any) {
 }
 
 // Создание разметки по шаблону
-function addUsersToMarkup(users:any[]) {
+function addUsersToMarkup(users: {}[]) {
   userList.innerHTML = "";
   counter.classList.add("show");
   users.map((user) => {
