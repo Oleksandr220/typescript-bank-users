@@ -1,11 +1,13 @@
 export const users = [
   {
-    name: "Иванов Иван Иванович",
+    surname: "Иванов",
+    name: "Иван",
+    patronymic: "Иванович",
     id: 1,
     isActive: true,
     currency: "UAH",
-    regDate: "16/12/2016",
-    finalDate: "15/12/2021",
+    regDate: "12/16/2016",
+    finalDate: "12/15/2021",
     account: {
       debitAccount: 4800,
       creditAccount: {
@@ -18,12 +20,14 @@ export const users = [
     },
   },
   {
-    name: "Сидоров Алексей Алексеевич",
+    surname: "Сидоров",
+    name: "Алексей",
+    patronymic: "Алексеевич",
     id: 2,
     isActive: true,
     currency: "USD",
-    regDate: "26/04/2019",
-    finalDate: "25/04/2024",
+    regDate: "04/26/2019",
+    finalDate: "04/25/2024",
     account: {
       debitAccount: 5500,
       creditAccount: {
@@ -36,12 +40,14 @@ export const users = [
     },
   },
   {
-    name: "Петров Петр Петрович",
+    surname: "Петров",
+    name: "Петр",
+    patronymic: "Петрович",
     id: 3,
     isActive: true,
     currency: "RUB",
-    regDate: "15/08/2018",
-    finalDate: "14/08/2023",
+    regDate: "08/15/2018",
+    finalDate: "08/14/2023",
     account: {
       debitAccount: 6295,
       creditAccount: {
@@ -54,12 +60,14 @@ export const users = [
     },
   },
   {
-    name: "Добрынин Никита Никитыч",
+    surname: "Добрынин",
+    name: "Никита",
+    patronymic: "Никитыч",
     id: 4,
     isActive: false,
     currency: "RUB",
-    regDate: "21/06/2014",
-    finalDate: "20/06/2019",
+    regDate: "06/21/2014",
+    finalDate: "06/20/2019",
     account: {
       debitAccount: 0,
       creditAccount: {
@@ -72,12 +80,14 @@ export const users = [
     },
   },
   {
-    name: "Попов Алексей Иванович",
+    surname: "Попов",
+    name: "Алексей",
+    patronymic: "Иванович",
     id: 5,
     isActive: false,
     currency: "UAH",
-    regDate: "21/09/2010",
-    finalDate: "20/09/2015",
+    regDate: "09/21/2010",
+    finalDate: "09/20/2015",
     account: {
       debitAccount: 0,
       creditAccount: {

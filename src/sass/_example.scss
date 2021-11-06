@@ -1,14 +1,26 @@
 body {
   font-family: Raleway;
-}
-.main__container {
-  padding: 25px;
+  background-color: rgb(248, 238, 227);
 }
 .form__accounts {
+  border: 1px solid rgb(19, 3, 94);
   margin-bottom: 50px;
+  background-color: rgb(114, 149, 246);
+  padding: 25px;
+}
+.btn__form-submit {
+  height: 30px;
+  background-color: rgb(224, 224, 224);
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__form-submit:hover {
+  background-color: darkgray;
 }
 .input__text {
   margin-right: 25px;
+  cursor: pointer;
 }
 .users__list {
   padding: 0;
